@@ -9,7 +9,7 @@ setwd("~/data/instacart")
 ID <- seq.int(nrow(train_train))
 
 set.seed(1)
-trainingRows <- createDataPartition(ID, p = .01, list= FALSE) 
+trainingRows <- createDataPartition(ID, p = .02, list= FALSE) 
 
 sub_train_train <- train_train[trainingRows,]
 
