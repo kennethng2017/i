@@ -41,6 +41,8 @@ subset <- c(1:144)
 #save data
 #save(sub_update, train.update1, trainingRows, ytrain, file = "data_caret.Rdata")
 
+load("C:/Users/Ken/Documents/data/instacart/data_caret.Rdata")
+
 #begin selecting model
 ctrl <- trainControl(method = "LGOCV",
                      summaryFunction = twoClassSummary,
